@@ -30,8 +30,8 @@ const makeMember = require("./work-3");
 
 let arrayMembers = [];
 
-names.forEach((index, nam)=>{
-  let member = makeMember(nam, index);
+names.forEach((names, index)=>{
+  let member = makeMember(index, names);
   arrayMembers.push(member);
 })
 console.log(arrayMembers);
