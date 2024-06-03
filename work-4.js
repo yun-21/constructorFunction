@@ -27,12 +27,11 @@ const names = [
 ];
 
 const makeMember = require("./work-3");
-console.log(makeMember(1,"김보미"));
 
 let arrayMembers = [];
 
-for(let i=0; i<names.length; i++){
-  let member = makeMember(i, names[i]);
+names.forEach((index, nam)=>{
+  let member = makeMember(nam, index);
   arrayMembers.push(member);
-}
+})
 console.log(arrayMembers);
