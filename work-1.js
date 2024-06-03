@@ -5,5 +5,10 @@
 function workOne(a,b){
 //* logic : 매개변수 두개를 받은 다음
 //* logic : return은 객체였음 좋겠다.
-  return 오브젝트;
+  let localVariable = {};
+
+  localVariable[a] = b
+  return localVariable;
 }
+const bb= workOne("hi","hello");
+console.log(bb);
