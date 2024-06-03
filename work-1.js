@@ -6,9 +6,11 @@ function workOne(a,b){
 //* logic : 매개변수 두개를 받은 다음
 //* logic : return은 객체였음 좋겠다.
   let localVariable = {};
-
-  localVariable[a] = b
+  // localVariable[a] = a //객체 조회하는방법.
+  // localVariable[b] = b //객체 조회하는방법.
+  
+  localVariable[arguments[0]]=arguments[0]
+  localVariable[arguments[1]]=arguments[1]
   return localVariable;
 }
-const bb= workOne("hi","hello");
-console.log(bb);
+console.log(workOne("hi","hello"));
